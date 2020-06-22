@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+.box-top-left {
+  background-color: lightcoral;
+  left: 0px;
+  top: 0px;
+  -webkit-animation: main--top-left 4s forwards;
+          animation: main--top-left 4s forwards;
+}
+
+.box-top-right {
+  background-color: lightblue;
+  right: 0px;
+  top: 0px;
+  -webkit-animation: main--top-right 4s forwards;
+          animation: main--top-right 4s forwards;
+}
+
+.box-bottom-right {
+  background-color: lightgreen;
+  right: 0px;
+  bottom: 0px;
+  -webkit-animation: main--bottom-right 4s forwards;
+          animation: main--bottom-right 4s forwards;
+}
+
+.box-bottom-left {
+  background-color: lightgoldenrodyellow;
+  left: 0px;
+  bottom: 0px;
+  -webkit-animation: main--bottom-left 4s forwards;
+          animation: main--bottom-left 4s forwards;
+}
+
+@-webkit-keyframes main--top-left {
+  to {
+    top: 50%;
+    left: 50%;
+    border-radius: 0 0 100px 0;
+    background-color: black;
+  }
+}
+
+@keyframes main--top-left {
+  to {
+    top: 50%;
+    left: 50%;
+    border-radius: 0 0 100px 0;
+    background-color: black;
+  }
+}
+
+@-webkit-keyframes main--top-right {
+  to {
+    top: 50%;
+    right: 50%;
+    border-radius: 0 0 0 100px;
+    background-color: black;
+  }
+}
+
+@keyframes main--top-right {
+  to {
+    top: 50%;
+    right: 50%;
+    border-radius: 0 0 0 100px;
+    background-color: black;
+  }
+}
+
+@-webkit-keyframes main--bottom-right {
+  to {
+    bottom: 50%;
+    right: 50%;
+    border-radius: 100px 0 0 0;
+    background-color: black;
+  }
+}
+
+@keyframes main--bottom-right {
+  to {
+    bottom: 50%;
+    right: 50%;
+    border-radius: 100px 0 0 0;
+    background-color: black;
+  }
+}
+
+@-webkit-keyframes main--bottom-left {
+  to {
+    bottom: 50%;
+    left: 50%;
+    border-radius: 0 100px 0 0;
+    background-color: black;
+  }
+}
+
+@keyframes main--bottom-left {
+  to {
+    bottom: 50%;
+    left: 50%;
+    border-radius: 0 100px 0 0;
+    background-color: black;
+  }
+}
+/*# sourceMappingURL=animation.css.map */

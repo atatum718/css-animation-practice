@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  //   animation-duration: 4s;
+}
+
+.box-top-left {
+  background-color: lightcoral;
+  left: 0px;
+  top: 0px;
+  animation: main--top-left 4s forwards;
+}
+
+.box-top-right {
+  background-color: lightblue;
+  right: 0px;
+  top: 0px;
+  animation: main--top-right 4s forwards;
+}
+
+.box-bottom-right {
+  background-color: lightgreen;
+  right: 0px;
+  bottom: 0px;
+  animation: main--bottom-right 4s forwards;
+}
+
+.box-bottom-left {
+  background-color: lightgoldenrodyellow;
+  left: 0px;
+  bottom: 0px;
+  animation: main--bottom-left 4s forwards;
+}
+
+@keyframes main--top-left {
+  to {
+    top: 50%;
+    left: 50%;
+    border-radius: 0 0 100px 0;
+    // border-bottom-right-radius: 100%;
+    background-color: black;
+  }
+}
+
+@keyframes main--top-right {
+  to {
+    top: 50%;
+    right: 50%;
+    border-radius: 0 0 0 100px;
+    // border-bottom-left-radius: 100%;
+    background-color: black;
+  }
+}
+
+@keyframes main--bottom-right {
+  to {
+    bottom: 50%;
+    right: 50%;
+    border-radius: 100px 0 0 0;
+    // border-top-left-radius: 100%;
+    background-color: black;
+  }
+}
+
+@keyframes main--bottom-left {
+  to {
+    bottom: 50%;
+    left: 50%;
+    border-radius: 0 100px 0 0;
+    // border-top-right-radius: 100%;
+    background-color: black;
+  }
+}
