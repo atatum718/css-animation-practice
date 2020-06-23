@@ -10,6 +10,11 @@
   //   animation-duration: 4s;
 }
 
+.box:hover {
+  border: 5px solid white;
+  transition-duration: 2s;
+}
+
 .box-top-left {
   background-color: lightcoral;
   left: 0px;
